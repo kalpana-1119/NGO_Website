@@ -1,18 +1,23 @@
 
 {
+  
   "name": "ngo-website",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+
   "engines": {
     "node": "24.x"
   },
 
   "scripts": {
     "dev": "vite",
-    "build": "npx vite build",
+    "build": "vite build",
     "preview": "vite preview"
   },
+
+
+  
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
