@@ -1,0 +1,67 @@
+.splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+}
+
+.splash-screen.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none; /* Add this to ensure it doesn't block clicks while animating out */
+}
+
+.splash-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeInPop 1s ease-out forwards;
+}
+
+.splash-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  animation: floatBounce 2s infinite alternate;
+}
+
+.splash-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--dark-blue);
+  letter-spacing: 2px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUpFadeIn 0.8s ease-out 0.3s forwards;
+}
+
+@keyframes fadeInPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideUpFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatBounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
