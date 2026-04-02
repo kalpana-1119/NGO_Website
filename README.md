@@ -1,4 +1,4 @@
-# 🌍 NGO Website – HopeReach
+# 🌍 NGO Website
 
 A modern NGO website built using **React + Vite** to showcase initiatives, encourage volunteering, and spread awareness.
 
