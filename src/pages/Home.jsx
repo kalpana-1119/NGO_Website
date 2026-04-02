@@ -26,7 +26,7 @@ const Home = () => {
 
       <section 
 className="hero" 
-style={{backgroundImage: "url('/Desktop - 1.png')"}}
+style={{backgroundImage: "url('/Desktop.png')"}}
 >
 
 <div className="container hero-container">
